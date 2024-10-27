@@ -7,9 +7,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #e0e0e0; /* Lightened text color */
-    background-color: #121212; /* Dark background */
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    color: #e0e0e0; 
+    background-color: #121212; 
+    overflow-x: hidden; 
 }
 
 .container {
@@ -106,7 +106,7 @@ nav.scrolled {
     display: flex;
     align-items: center;
     color: #fff;
-    animation: fadeIn 1s; /* Add fade-in animation */
+    animation: fadeIn 1s; 
 }
 
 @keyframes fadeIn {
@@ -134,12 +134,12 @@ nav.scrolled {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for button */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .btn:hover {
     background-color: #e64a19;
-    transform: scale(1.05); /* Scale effect on hover */
+    transform: scale(1.05); 
 }
 
 .hero-container {
@@ -192,7 +192,7 @@ nav.scrolled {
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
-    animation: fadeIn 1s; /* Add fade-in animation */
+    animation: fadeIn 1s; 
 }
 
 .about-photo {
@@ -222,7 +222,7 @@ nav.scrolled {
 /* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
     gap: 20px;
     padding: 50px 0;
 }
@@ -246,7 +246,7 @@ nav.scrolled {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     gap: 20px;
 }
 
@@ -256,7 +256,7 @@ nav.scrolled {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
-    animation: fadeIn 1s; /* Add fade-in animation */
+    animation: fadeIn 1s; 
 }
 
 .project-card:hover {
@@ -274,7 +274,7 @@ nav.scrolled {
 /* Education Section */
 .education-timeline {
     padding: 50px 0;
-    animation: fadeIn 1s; /* Add fade-in animation */
+    animation: fadeIn 1s; 
 }
 
 .timeline-item {
@@ -289,7 +289,7 @@ nav.scrolled {
     display: flex;
     justify-content: space-between;
     padding: 50px 0;
-    animation: fadeIn 1s; /* Add fade-in animation */
+    animation: fadeIn 1s; 
 }
 
 .contact-info, .contact-form {
@@ -318,12 +318,12 @@ nav.scrolled {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for button */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .contact-form button:hover {
     background-color: #e64a19;
-    transform: scale(1.05); /* Scale effect on hover */
+    transform: scale(1.05); 
 }
 
 /* Footer */
@@ -350,7 +350,7 @@ footer {
 .download-cv {
     display: inline-block;
     margin-top: 20px;
-    background-color: #4CAF50; /* Different color to stand out */
+    background-color: #4CAF50; 
 }
 
 .download-cv:hover {

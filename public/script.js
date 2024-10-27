@@ -12,18 +12,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     window.addEventListener('scroll', animateSkillBars);
-    animateSkillBars(); // Initial check on page load
+    animateSkillBars(); 
 });
 
 
-// Example of handling form submission with Firebase
+
 const contactForm = document.querySelector('#contact-form');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const formData = new FormData(contactForm);
   const data = Object.fromEntries(formData);
   
-  // Send to Firebase
+
   firebase.firestore().collection('contacts').add(data)
     .then(() => alert('Message sent successfully!'))
     .catch((error) => console.error('Error:', error));
