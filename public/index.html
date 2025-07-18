@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Praveer Jaggi</title>
+    <meta name="description" content="Praveer Jaggi's modern, interactive portfolio. Full stack developer with expertise in React, Node.js, PHP, and more. Explore projects, skills, and contact info.">
+    <meta property="og:title" content="Portfolio - Praveer Jaggi">
+    <meta property="og:description" content="Modern, interactive portfolio of Praveer Jaggi. Full stack developer. Projects, skills, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="praveer_2.jpg">
+    <link rel="icon" type="image/png" href="praveer_2.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav>
+    <nav role="navigation" aria-label="Main Navigation">
         <div class="container nav-container">
             <div class="logo">PRAVEER SINGH JAGGI</div>
             <ul class="nav-links">
@@ -24,11 +31,11 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero reveal" aria-label="Hero">
         <div class="container hero-container">
             <div class="hero-text">
                 <h2>Hello, I'm Praveer</h2>
-                <p>Welcome to my portfolio website. I am a passionate developer specializing in Full stack web development.</p>
+                <p>Full Stack Developer with proven experience building scalable web and mobile apps using <strong>React, React Native, Node.js, Firebase, and C#</strong>. Delivered real-time systems across logistics, education, and gaming. Known for clean code, strong collaboration, and performance-first problem solving.</p>
                 <a href="#projects" class="btn">View My Work</a>
             </div>
             <div class="hero-image">
@@ -38,53 +45,171 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="reveal" aria-label="About Me">
         <div class="container about-content">
             <div class="about-photo">
-                <img src="praveer_1.jpg" alt="About Image">
+                <img src="praveer_1.jpg" alt="Photo of Praveer Jaggi">
             </div>
             <div class="about-text">
                 <h2>About Me</h2>
-                <p>I am a third-year BTech student at KJ Somaiya College of Engineering, specializing in IT. I have a strong foundation in Python, HTML, CSS, and JavaScript, developing a keen interest in competitive programming. I'm currently exploring cryptography and Data structures and algorithms.</p>
+                <p>I am a final-year BTech student at KJ Somaiya College of Engineering, specializing in IT with Honours in AI/ML. I have hands-on experience in building scalable web and mobile applications, real-time systems, and cloud-based solutions. I thrive in collaborative environments, excel at problem-solving, and am passionate about delivering clean, maintainable code.</p>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="reveal" aria-label="Skills">
+        <svg class="section-bg-svg" height="120" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,80 C480,160 960,0 1440,80 L1440,120 L0,120 Z" fill="#1e1e1e" fill-opacity="0.25"/></svg>
         <div class="container">
             <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">
-                    <i class="fas fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Proficient in HTML, CSS, JavaScript, and familiar with PHP for backend development.</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="90%" style="width: 0;"></div>
+            <div class="section-title-wave"><svg height="32" width="100%" viewBox="0 0 1440 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,16 C480,32 960,0 1440,16 L1440,32 L0,32 Z" fill="#ff5722" fill-opacity="0.10"/></svg></div>
+            <div class="skills-grid slide-up">
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="95">
+                        <svg width="64" height="64">
+                            <circle class="bg" cx="32" cy="32" r="28" stroke-width="8" fill="none" />
+                            <circle class="progress" cx="32" cy="32" r="28" stroke-width="8" fill="none" />
+                        </svg>
+                        <span class="skill-icon">💻</span>
+                    </div>
+                    <div class="skill-label">Languages
+                        <ul class="skill-list">
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>C#</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="skill">
-                    <i class="fas fa-database"></i>
-                    <h3>Database Management</h3>
-                    <p>Experience with MySQL and basic NoSQL databases for efficient data storage and retrieval.</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="80%" style="width: 0;"></div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="90">
+                        <svg width="64" height="64">
+                            <circle class="bg" cx="32" cy="32" r="28" stroke-width="8" fill="none" />
+                            <circle class="progress" cx="32" cy="32" r="28" stroke-width="8" fill="none" />
+                        </svg>
+                        <span class="skill-icon">⚛️</span>
+                    </div>
+                    <div class="skill-label">Frameworks
+                        <ul class="skill-list">
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Socket.io</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="skill">
-                    <i class="fas fa-brain"></i>
-                    <h3>Data Structures and Algorithms</h3>
-                    <p>Proficient in competitive programming with a focus on DSA.</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="85%" style="width: 0;"></div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="85">
+                        <svg width="64" height="64">
+                            <circle class="bg" cx="32" cy="32" r="28" stroke-width="8" fill="none" />
+                            <circle class="progress" cx="32" cy="32" r="28" stroke-width="8" fill="none" />
+                        </svg>
+                        <span class="skill-icon">📱</span>
+                    </div>
+                    <div class="skill-label">Mobile
+                        <ul class="skill-list">
+                            <li>React Native</li>
+                            <li>Expo</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="skill">
-                    <i class="fas fa-lock"></i>
-                    <h3>Cryptography</h3>
-                    <p>Understanding of encryption techniques and protocols, including RSA, DES, and Diffie-Hellman.</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="70%" style="width: 0;"></div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="80">
+                        <svg width="64" height="64">
+                            <circle class="bg" cx="32" cy="32" r="28" stroke-width="8" fill="none" />
+                            <circle class="progress" cx="32" cy="32" r="28" stroke-width="8" fill="none" />
+                        </svg>
+                        <span class="skill-icon">🗄️</span>
+                    </div>
+                    <div class="skill-label">Databases
+                        <ul class="skill-list">
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>Redis</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="90">
+                        <svg width="64" height="64">
+                            <circle class="bg" cx="32" cy="32" r="28" stroke-width="8" fill="none" />
+                            <circle class="progress" cx="32" cy="32" r="28" stroke-width="8" fill="none" />
+                        </svg>
+                        <span class="skill-icon">🛠️</span>
+                    </div>
+                    <div class="skill-label">Tools
+                        <ul class="skill-list">
+                            <li>Git</li>
+                            <li>Swagger</li>
+                            <li>Postman</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-circle" data-percent="75">
+                        <svg width="64" height="64">
+                            <circle class="bg" cx="32" cy="32" r="28" stroke-width="8" fill="none" />
+                            <circle class="progress" cx="32" cy="32" r="28" stroke-width="8" fill="none" />
+                        </svg>
+                        <span class="skill-icon">☁️</span>
+                    </div>
+                    <div class="skill-label">Data/Cloud
+                        <ul class="skill-list">
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Seaborn</li>
+                            <li>Matplotlib</li>
+                            <li>Google Cloud</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="reveal" aria-label="Experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="exp-timeline">
+                <div class="exp-line"></div>
+                <div class="exp-card slide-left">
+                    <div class="exp-dot">💼</div>
+                    <div class="exp-content">
+                        <h3>Full Stack Developer Trainee, <span class="exp-company">Green Ship Technologies</span></h3>
+                        <span class="exp-date">May 2025 – Present</span>
+                        <ul class="exp-list">
+                            <li>Built RESTful APIs using C# and MySQL for a vessel management platform.</li>
+                            <li>Developed file parsing tools for structured vessel and vendor data, <span class="exp-highlight">reducing manual entry by 90%</span> and cutting processing time from minutes to seconds.</li>
+                            <li>Wrote 25+ unit/integration tests and improved API docs using Swagger; contributed to Agile sprints.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-card slide-right">
+                    <div class="exp-dot">♟️</div>
+                    <div class="exp-content">
+                        <h3>Full Stack Developer (Part-time), <span class="exp-company">Creovate</span></h3>
+                        <span class="exp-date">2024 – Present</span>
+                        <ul class="exp-list">
+                            <li>Built a multiplayer chess app with React Native, Node.js, Redis, and Socket.io for smooth real-time gameplay.</li>
+                            <li>Optimized matchmaking and game state logic, <span class="exp-highlight">reducing DB load</span> and enhancing latency under simulation.</li>
+                            <li>Collaborated in a 3-person Agile team using Git, standups, and shared testing cycles.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-card slide-left">
+                    <div class="exp-dot">📱</div>
+                    <div class="exp-content">
+                        <h3>Frontend Intern, <span class="exp-company">KJ Somaiya College of Engineering</span></h3>
+                        <span class="exp-date">June – July 2024</span>
+                        <ul class="exp-list">
+                            <li>Built a mobile app using React Native and Firebase Auth with animated UI for student-faculty interaction.</li>
+                            <li>Integrated cloud-based forms and tested with <span class="exp-highlight">100+ users</span> during pilot rollout.</li>
+                            <li>Participated in sprint planning, code reviews, and feature demos with stakeholders.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -92,32 +217,49 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="reveal" aria-label="Projects">
+        <svg class="section-bg-svg" height="120" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,40 C480,120 960,0 1440,40 L1440,120 L0,120 Z" fill="#2196f3" fill-opacity="0.10"/></svg>
         <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="project1.jpg" alt="Portfolio Website" class="project-image">
+            <h2 class="section-title-bg">Projects</h2>
+            <div class="projects-grid slide-up">
+                <div class="project-card" data-modal="modal-ids">
+                    <img src="ids.png" alt="Intrusion Detection System" class="project-image">
+                    <div class="project-info">
+                        <h3>Intrusion Detection System (IDS)</h3>
+                        <p>Built a real-time IDS using ML-based anomaly detection with <strong>94–95% accuracy</strong> and reduced false positives by 30%. Optimized pipelines for faster inference and integrated anomaly scoring for better threat visibility.</p>
+                        <a href="" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-modal="modal-portfolio">
+                    <img src="image.png" alt="Portfolio Website" class="project-image">
                     <div class="project-info">
                         <h3>Portfolio Website</h3>
-                        <p>Developed a responsive portfolio website using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+                        <p>Created a responsive personal portfolio with animations, GitHub integration, and custom UI components. Hosted on Firebase with version-controlled updates via Git.</p>
                         <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="crave_courier.png" alt="Food Delivery Website" class="project-image">
-                    <div class="project-info">
-                        <h3>Food Delivery Website</h3>
-                        <p>Created a food delivery website that allows users to order food from various restaurants and track their deliveries in real time.</p>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
+                <div class="project-card" data-modal="modal-ecommerce">
                     <img src="lara.png" alt="E-Commerce Website" class="project-image">
                     <div class="project-info">
                         <h3>E-Commerce Website</h3>
-                        <p>Developed an e-commerce website for selling clothes, perfumes, and watches, featuring user accounts and a secure payment system.</p>
-                        <a href="#" class="btn">View Project</a>
+                        <p>Built an interactive product interface with filtering, modals, and responsive layouts. Focused on user-centric design for intuitive navigation and dynamic content.</p>
+                        <a href="" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-modal="modal-fooddelivery">
+                    <img src="crave_courier.png" alt="Food Delivery Website" class="project-image">
+                    <div class="project-info">
+                        <h3>Food Delivery Website</h3>
+                        <p>Developed a full-stack food delivery platform with login, order tracking, admin panel, and real-time cart system. Backend handled using PHP and MySQL for data persistence and admin control.</p>
+                        <a href="" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-modal="modal-paymentapp">
+                    <img src="image1.png" alt="Payment App" class="project-image project-image-paysafe">
+                    <div class="project-info">
+                        <h3>Payment App</h3>
+                        <p>Designed a cross-platform mobile app with Firebase authentication and real-time payment logging. Emphasized reusable UI components and performance testing across devices.</p>
+                        <a href="" class="btn">View Project</a>
                     </div>
                 </div>
             </div>
@@ -125,47 +267,99 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education">
+    <section id="education" class="reveal" aria-label="Education">
+        <svg class="section-bg-svg" height="120" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,60 C480,0 960,120 1440,60 L1440,120 L0,120 Z" fill="#ff5722" fill-opacity="0.10"/></svg>
         <div class="container">
-            <h2>Education</h2>
-            <div class="education-timeline">
-                <div class="timeline-item">
-                    <h3>KJ Somaiya College of Engineering</h3>
-                    <span>2022 - Present</span>
-                    <p>Pursuing BTech in Information Technology with honours in AI and ML, currently in my 3rd year, focusing on web development, App development, and machine learning.</p>
+            <h2 class="section-title-bg">Education</h2>
+            <div class="education-branch slide-up">
+                <div class="edu-node">
+                    <div class="edu-circle"></div>
+                    <div class="edu-content">
+                        <h3>B.Tech (Information Technology), K. J. Somaiya College of Engineering</h3>
+                        <span>Expected 2026</span>
+                        <p>Honours in AI/ML</p>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h3>Artificial Intelligence Course</h3>
-                    <span>MyCaptain Issued Nov 2023</span>
-                    <p>Artificial Intelligence (AI) and Python (Programming Language)</p>
+                <div class="edu-branch-line"></div>
+                <div class="edu-node">
+                    <div class="edu-circle"></div>
+                    <div class="edu-content">
+                        <h3>12th (CBSE), DAV Public School, Nerul</h3>
+                        <span>2022</span>
+                        <p>73.2%</p>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h3>Python Programming Course</h3>
-                    <span>MyCaptain Issued Apr 2023</span>
-                    <p>Python (Programming Language)</p>
+                <div class="edu-branch-line"></div>
+                <div class="edu-node">
+                    <div class="edu-circle"></div>
+                    <div class="edu-content">
+                        <h3>10th (CBSE), DAV Public School, Nerul</h3>
+                        <span>2020</span>
+                        <p>93.8%</p>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h3>High School</h3>
-                    <span>2020 - 2022</span>
-                    <p>Completed high school with a focus on science, specializing in Computer Science.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="reveal" aria-label="Certifications">
+        <svg class="section-bg-svg" height="120" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,80 C480,160 960,0 1440,80 L1440,120 L0,120 Z" fill="#1e1e1e" fill-opacity="0.18"/></svg>
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="section-title-wave"><svg height="32" width="100%" viewBox="0 0 1440 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,16 C480,32 960,0 1440,16 L1440,32 L0,32 Z" fill="#ff5722" fill-opacity="0.10"/></svg></div>
+            <div class="certification-grid slide-up">
+                <div class="certification-item">
+                    <span class="cert-badge">🏅</span>
+                    <div class="cert-title">Python Programming (MyCaptain)</div>
+                    <div class="cert-desc">Completed hands-on projects and learned Python fundamentals.</div>
+                </div>
+                <div class="certification-item">
+                    <span class="cert-badge">🤖</span>
+                    <div class="cert-title">Artificial Intelligence (MyCaptain)</div>
+                    <div class="cert-desc">Explored AI concepts and built simple AI models.</div>
+                </div>
+                <div class="certification-item">
+                    <span class="cert-badge">💻</span>
+                    <div class="cert-title">Web Dev Bootcamp (Udemy)</div>
+                    <div class="cert-desc">Covered full stack web development with real-world projects.</div>
+                </div>
+                <div class="certification-item">
+                    <span class="cert-badge">☁️</span>
+                    <div class="cert-title">Google Cloud Core (Google)</div>
+                    <div class="cert-desc">Learned cloud fundamentals and Google Cloud services.</div>
+                </div>
+                <div class="certification-item">
+                    <span class="cert-badge">📊</span>
+                    <div class="cert-title">Data Analysis for Business (FII)</div>
+                    <div class="cert-desc">Applied data analysis techniques to business scenarios.</div>
+                </div>
+                <div class="certification-item">
+                    <span class="cert-badge">📈</span>
+                    <div class="cert-title">Intro to Data Analytics (IBM)</div>
+                    <div class="cert-desc">Gained foundational knowledge in data analytics.</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="reveal" aria-label="Contact">
         <div class="container contact-container">
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p>Email: <a href="mailto:praveer1011@gmail.com">praveer1011@gmail.com</a></p>
-                <p>Phone: +91 9321617356</p>
-                <p>Address: Navi Mumbai, India</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/praveer-singh-j-b76306245" target="_blank">Praveer Singh Jaggi</a></p>
-                <a href="mailto:praveer1011@gmail.com" class="btn">Get in Touch</a>
-                <a href="Praveer RESUME.pdf" class="btn" download>Download CV</a>
+            <div class="contact-info glass-card">
+                <h2 style="font-size:1.3em;margin-bottom:18px;">Contact Information</h2>
+                <div class="section-title-wave"><svg height="32" width="100%" viewBox="0 0 1440 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,16 C480,32 960,0 1440,16 L1440,32 L0,32 Z" fill="#2196f3" fill-opacity="0.10"/></svg></div>
+                <p><span class="contact-icon">✉️</span> <a href="mailto:praveer1011@gmail.com" class="contact-link">praveer1011@gmail.com</a></p>
+                <p><span class="contact-icon">📞</span> <span class="contact-text">+91 9321617356</span></p>
+                <p><span class="contact-icon">📍</span> <span class="contact-text">Navi Mumbai, India</span></p>
+                <p><span class="contact-icon">🔗</span> <a href="https://www.linkedin.com/in/praveer-singh-j-b76306245" class="contact-link" target="_blank">LinkedIn</a></p>
+                <p><span class="contact-icon">💻</span> <a href="https://github.com/ps-ja200" class="contact-link" target="_blank">GitHub</a></p>
+                <div class="contact-btns">
+                    <a href="mailto:praveer1011@gmail.com" class="btn">Get in Touch</a>
+                    <a href="Praveer_Resume_Fullstack.pdf" class="btn" download>Download CV</a>
+                </div>
             </div>
-            <div class="contact-form">
+            <div class="contact-form glass-card">
                 <h3>Send a Message</h3>
                 <form id="contact-form">
                     <label for="name">Your Name</label>
@@ -210,5 +404,133 @@
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
       </script>
+    <!-- Project Modals -->
+    <div id="modal-paymentapp" class="project-modal" role="dialog" aria-modal="true" aria-label="Payment App Details">
+        <div class="project-modal-content">
+            <span class="close-modal" tabindex="0" aria-label="Close Modal">&times;</span>
+            <h2>Payment React – Modern Payment Management System</h2>
+            <a href="https://drive.google.com/file/d/1t4Jdof1GKv9wamU9bNh8GveVYeQBkMjy/view?usp=sharing" class="btn" target="_blank" style="margin-bottom:18px;display:inline-block;"><span style="font-size:1.1em;vertical-align:middle;">▶️</span> Watch Demo</a>
+            <p><strong>Payment React</strong> is a full-stack payment management application designed to streamline personal and peer-to-peer financial transactions. Built with a modern React frontend and a robust Node.js/Express backend, this project demonstrates my ability to architect, develop, and test scalable web applications with real-world utility.</p>
+            <h3>Key Features</h3>
+            <ul>
+                <li><strong>User Authentication & Security:</strong> Secure sign-up and login flows with robust authentication middleware, password hashing, and session management.</li>
+                <li><strong>Dashboard Overview:</strong> A user-friendly dashboard provides a snapshot of recent transactions, account balance, and quick access to core features.</li>
+                <li><strong>Contact Management:</strong> Add, edit, and manage contacts for seamless money transfers. Contacts are stored securely and can be quickly searched or updated.</li>
+                <li><strong>Send & Request Money:</strong> Effortlessly send or request money from contacts. Each transaction is validated and logged, with real-time feedback and notifications.</li>
+                <li><strong>Transaction History:</strong> View a detailed history of all sent, received, and requested payments, with filtering and sorting options for easy tracking.</li>
+                <li><strong>Profile Management:</strong> Update personal information and view account details in a dedicated profile section.</li>
+                <li><strong>Error Handling & Notifications:</strong> Comprehensive error boundaries and toast notifications ensure a smooth user experience, even when issues arise.</li>
+                <li><strong>Responsive UI:</strong> The application is fully responsive, providing an optimal experience on both desktop and mobile devices.</li>
+            </ul>
+            <h3>Technical Stack</h3>
+            <ul>
+                <li><strong>Frontend:</strong> React, Context API, custom UI components, modern CSS</li>
+                <li><strong>Backend:</strong> Node.js, Express.js, MongoDB (Mongoose), RESTful API</li>
+                <li><strong>Testing:</strong> Jest for unit/integration tests</li>
+                <li><strong>DevOps:</strong> Dockerized backend, health checks, logging</li>
+            </ul>
+            <h3>Why I Built This</h3>
+            <p>Managing personal finances and peer-to-peer payments should be simple, secure, and intuitive. Payment React was created to address these needs, providing a real-world demonstration of my skills in full-stack development, API design, authentication, and user experience.</p>
+            <h3>What I Learned</h3>
+            <ul>
+                <li>Architecting scalable, maintainable codebases</li>
+                <li>Implementing secure authentication and authorization</li>
+                <li>Building reusable React components and managing global state</li>
+                <li>Writing and maintaining comprehensive test suites</li>
+                <li>Deploying and monitoring production-ready applications</li>
+            </ul>
+            <a href="https://github.com/ps-ja200/Payment-react" class="btn" target="_blank">GitHub Repo</a>
+        </div>
+    </div>
+    <div id="modal-fooddelivery" class="project-modal" role="dialog" aria-modal="true" aria-label="Food Delivery Website Details">
+        <div class="project-modal-content">
+            <span class="close-modal" tabindex="0" aria-label="Close Modal">&times;</span>
+            <h2>Food Delivery Website – Next-Gen Food Ordering with Corporate, Eco-Friendly, and AI Features</h2>
+            <p>This Food Delivery Website is a full-stack web application that reimagines the online food ordering experience by integrating advanced features not found in mainstream platforms like Swiggy or Zomato. While it offers all the essential functionalities—such as browsing a dynamic menu, user authentication, order tracking, and a smooth checkout process—it goes several steps further to address modern user needs and corporate requirements:</p>
+            <ul>
+                <li><strong>Corporate Ordering System:</strong> Supports bulk and scheduled orders for corporate clients, ideal for office events, team lunches, and recurring business needs. The dedicated corporate interface streamlines large orders and offers tailored management tools for organizations.</li>
+                <li><strong>AI-Powered Nutritionist:</strong> Analyzes menu items and provides personalized meal recommendations based on users’ dietary preferences and health goals.</li>
+                <li><strong>Eco-Friendly Carbon Footprint Calculator:</strong> Calculates and displays the carbon footprint of each meal, promoting sustainability and eco-conscious decisions.</li>
+                <li><strong>Enhanced User Experience:</strong> Intuitive navigation, real-time order tracking, and a responsive design for seamless use across devices.</li>
+                <li><strong>Robust Backend & Security:</strong> Built with PHP and MySQL, secure data handling, session management, and efficient API endpoints.</li>
+            </ul>
+            <h3>Key Differentiators</h3>
+            <ul>
+                <li>Corporate bulk/scheduled ordering (not available in Swiggy/Zomato)</li>
+                <li>AI-driven nutrition guidance for personalized health</li>
+                <li>Carbon footprint tracking for every meal</li>
+                <li>Focus on sustainability and corporate wellness</li>
+                <li>Modern, user-centric design and robust security</li>
+            </ul>
+            <p>This project demonstrates expertise in full-stack development, AI integration, sustainability, and user-focused design—delivering a food delivery solution that’s ready for the future.</p>
+            <a href="https://github.com/ps-ja200/Crave-Courier-Food-delivery-website" class="btn" target="_blank">GitHub Repo</a>
+        </div>
+    </div>
+    <div id="modal-ids" class="project-modal" role="dialog" aria-modal="true" aria-label="IDS Project Details">
+        <div class="project-modal-content">
+            <span class="close-modal" tabindex="0" aria-label="Close Modal">&times;</span>
+            <h2>Intrusion Detection System (IDS)</h2>
+            <p><strong>Overview:</strong><br>
+            This Intrusion Detection System (IDS) is a high-performance, machine learning-based solution for real-time network threat detection. It leverages advanced models like Random Forest and XGBoost to efficiently identify network anomalies and cyber threats, ensuring robust security for modern infrastructures.</p>
+            <ul>
+                <li><strong>Real-Time Threat Detection:</strong> Continuously monitors network traffic to identify and alert on suspicious patterns and potential attacks as they happen.</li>
+                <li><strong>Advanced Machine Learning:</strong> Utilizes Random Forest and XGBoost models for superior anomaly detection, classification, and low false positive rates.</li>
+                <li><strong>Scalability & Efficiency:</strong> Designed for high throughput and low computational overhead, making it suitable for deployment in large-scale, real-world networks.</li>
+                <li><strong>Comprehensive Dataset Support:</strong> Trained and validated on multiple real-world network datasets, ensuring robustness and adaptability.</li>
+                <li><strong>Deployment Ready:</strong> Modular, well-documented codebase for easy integration and extension in enterprise environments.</li>
+                <li><strong>Performance Focus:</strong> Prioritizes computational efficiency and scalability, ensuring seamless operation in diverse network environments.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Python (Jupyter Notebook), Scikit-learn, XGBoost, Pandas, NumPy, Real-world network datasets</p>
+            <p><strong>What I Learned:</strong></p>
+            <ul>
+                <li>Building scalable, production-ready ML pipelines</li>
+                <li>Optimizing for low latency and high accuracy in real-time systems</li>
+                <li>Handling large datasets and feature engineering for network data</li>
+                <li>Deploying ML models for cybersecurity applications</li>
+            </ul>
+            <a href="https://github.com/sparshthoria/network_anomaly_detection.git" class="btn" target="_blank">GitHub Repo</a>
+        </div>
+    </div>
+    <div id="modal-portfolio" class="project-modal" role="dialog" aria-modal="true" aria-label="Portfolio Website Details">
+        <div class="project-modal-content">
+            <span class="close-modal" tabindex="0" aria-label="Close Modal">&times;</span>
+            <h2>Portfolio Website</h2>
+            <p><strong>This portfolio is a modern, interactive showcase of my skills as a full stack developer, designed to impress both technical and non-technical audiences. It features a visually stunning dark theme with animated gradients, glassmorphism, and microinteractions throughout. Every section is crafted for clarity and engagement: from the animated hero and typewriter intro, to the skills grid with animated circular progress, to the unique timeline and branching education visuals. Projects are presented as interactive cards with detailed modals and direct GitHub links, while certifications and experience are displayed with icons, badges, and animation. The contact section is refined with icons, accent-colored links, and a glassy card layout. The site is fully responsive, accessible, and built with modern HTML, CSS, and JavaScript. This portfolio not only demonstrates my technical abilities—React, Node.js, PHP, Firebase, MongoDB, and more—but also my eye for design, UX, and attention to detail. It is a living example of my ability to deliver polished, production-ready web experiences that stand out in a crowded field.</strong></p>
+            <p>Created a responsive personal portfolio with animations, GitHub integration, and custom UI components. Hosted on Firebase with version-controlled updates via Git.</p>
+            <h3>Tech Stack:</h3>
+            <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>UI/UX:</strong> Glassmorphism, animated gradients, microinteractions</li>
+                <li><strong>Hosting:</strong> Firebase Hosting</li>
+                <li><strong>Version Control:</strong> Git</li>
+            </ul>
+            <a href="" class="btn" target="_blank">GitHub Repo</a>
+        </div>
+    </div>
+    <div id="modal-ecommerce" class="project-modal" role="dialog" aria-modal="true" aria-label="E-Commerce Website Details">
+        <div class="project-modal-content">
+            <span class="close-modal" tabindex="0" aria-label="Close Modal">&times;</span>
+            <h2>E-Commerce Website</h2>
+            <p><strong>Overview:</strong><br>
+            This E-Commerce Website is a modern, responsive frontend web application designed to deliver a seamless and visually appealing online shopping experience. Built with HTML, CSS, and JavaScript, it features a dynamic product catalog, interactive UI components, and a clean, user-centric design. The platform is crafted for usability and scalability, making it suitable for real-world deployment as a frontend for any e-commerce business.</p>
+            <ul>
+                <li><strong>Dynamic Product Catalog:</strong> Browse, search, and filter products with real-time updates and responsive layouts.</li>
+                <li><strong>Shopping Cart UI:</strong> Add, remove, and update cart items with smooth, interactive feedback.</li>
+                <li><strong>Order Summary & Checkout UI:</strong> View order details and proceed through a visually guided checkout process (frontend only).</li>
+                <li><strong>Responsive Design:</strong> Optimized for desktop and mobile devices for a consistent user experience.</li>
+                <li><strong>Modern UI/UX:</strong> Uses glassmorphism, accent colors, and microinteractions for a premium look and feel.</li>
+                <li><strong>Easy Integration:</strong> Can be connected to any backend for real-world deployment.</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript (Frontend Only)</p>
+            <p><strong>What I Learned:</strong></p>
+            <ul>
+                <li>Designing intuitive, responsive UIs for e-commerce</li>
+                <li>Managing state and data flow in frontend apps</li>
+                <li>Implementing modern CSS and interactive components</li>
+                <li>Building scalable, user-friendly web applications</li>
+            </ul>
+            <a href="https://github.com/ps-ja200/E-commerce" class="btn" target="_blank">GitHub Repo</a>
+        </div>
+    </div>
 </body>
 </html>
